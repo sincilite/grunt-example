@@ -4,7 +4,7 @@
   "description": "Just a test for implementing JS CI",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "grunt jshint"
+    "test": "grunt default"
   },
   "author": "",
   "license": "ISC",
