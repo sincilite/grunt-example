@@ -14,6 +14,9 @@ module.exports = function(grunt) {
     },
     jshint : {
         src: ['js/*.js'],
+        options: {
+            reporter: require('jshint-stylish')
+        }
     },
   });
 
@@ -22,6 +25,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['jshint', 'uglify']);
 
 };
