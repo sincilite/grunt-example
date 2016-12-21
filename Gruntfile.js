@@ -13,25 +13,7 @@ module.exports = function(grunt) {
       }
     },
     jshint : {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        eqnull: true,
-        browser: true,
-        globals: {
-          jQuery: true
-        },
-      },
-      //uses_defaults: ['dir1/**/*.js', 'dir2/**/*.js'],
-      with_overrides: {
-        options: {
-          curly: false,
-          undef: true,
-        },
-        files: {
-          src: ['js/*.js']
-        },
-      }
+        src: ['js/*.js'],
     },
   });
 
